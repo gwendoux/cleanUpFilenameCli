@@ -1,0 +1,19 @@
+{
+  "name": "cleanFilename",
+  "version": "0.0.1",
+  "description": "Cleanup downloaded files name",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gwendoux/cleanUpFilename.git"
+  },
+  "author": "gwendoux",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gwendoux/cleanUpFilename/issues"
+  },
+  "homepage": "https://github.com/gwendoux/cleanUpFilename"
+}
