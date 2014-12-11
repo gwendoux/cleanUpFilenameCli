@@ -16,6 +16,7 @@ function normalize(input) {
     };
     return input.replace(charactersToDecode, function(x) { return charactersEq[x] || x; });
 }
+module.exports.normalize = normalize;
 
 var output = normalize(input);
 
