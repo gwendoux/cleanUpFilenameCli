@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-"use strict";
+'use strict';
 
 var program = require('commander'),
     cleanup = require('./modules/cleanup.js').cleanup;
