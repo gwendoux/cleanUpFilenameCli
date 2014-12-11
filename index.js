@@ -1,7 +1,8 @@
 #!/usr/bin/env node
+"use strict";
 
-var program = require('commander');
-var cleanup = require('./modules/cleanup.js').cleanup;
+var program = require('commander'),
+    cleanup = require('./modules/cleanup.js').cleanup;
 
 program
   .version('0.0.1')
