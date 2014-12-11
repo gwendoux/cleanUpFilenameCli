@@ -18,8 +18,9 @@ and just run with the name to clean in argument
 ## ToDo
 
 - [ ] Add a command line name
-- [ ] Add test
+- [X] Add test
 - [ ] Add new function to normalize filename for the web
 - [ ] Transform in Uppercase characters to decode
 - [ ] Add parameter to get clipboard content and add to after
 - [ ] Improve help command
+- [ ] Use Encode/decode URI component
