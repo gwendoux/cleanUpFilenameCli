@@ -1,5 +1,12 @@
-var urlencode = require('urlencode');
+
+var urlencode = require('urlencode'),
+    removeDiacritics = require('diacritics').remove,
+    lowerCase = require('lower-case');
 
 module.exports.cleanup = function (val) {
-    return urlencode.decode(val);
-}
+    val = urlencode.decode(val, 'utf-8');
+    val = val.replace(/\s/g, "-");
+    val = removeDiacritics(val);
+    val = lowerCase(val);
+    return val;
+};
