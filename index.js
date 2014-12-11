@@ -15,4 +15,4 @@ var input = program.filename;
 
 var output = cleanup(input);
 
-console.log(output);
+console.log("Result: %s", output);
