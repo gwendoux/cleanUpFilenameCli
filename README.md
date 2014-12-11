@@ -15,12 +15,16 @@ and just run with the name to clean in argument
 
     $ ./index.js <filename>
 
+Run the test with
+
+    $ gulp test
+
 ## ToDo
 
 - [ ] Add a command line name
-- [X] Add test
+- [X] ~~Add test~~
 - [ ] Add new function to normalize filename for the web
 - [ ] Transform in Uppercase characters to decode
 - [ ] Add parameter to get clipboard content and add to after
 - [ ] Improve help command
-- [ ] Use Encode/decode URI component
+- [X] ~~Use Encode/decode URI component~~
