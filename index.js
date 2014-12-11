@@ -2,10 +2,11 @@
 'use strict';
 
 var program = require('commander'),
+    pck = require('./package.json'),
     cleanup = require('./modules/cleanup.js').cleanup;
 
 program
-  .version('0.0.1')
+  .version(pck.version)
   .option('-f, --filename [filename]', 'filename to clean up')
   .parse(process.argv);
 
