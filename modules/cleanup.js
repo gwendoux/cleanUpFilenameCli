@@ -1,5 +1,5 @@
 var urlencode = require('urlencode');
 
-module.exports.decode = function (val) {
+module.exports.cleanup = function (val) {
     return urlencode.decode(val);
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var program = require('commander');
-var decode = require('./modules/decode.js').decode;
+var cleanup = require('./modules/cleanup.js').cleanup;
 
 program
   .version('0.0.1')
@@ -11,6 +11,6 @@ program
 
 var input = program.filename;
 
-var output = decode(input);
+var output = cleanup(input);
 
 console.log(output);
