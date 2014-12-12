@@ -6,6 +6,12 @@ This is a node.js command line utility that cleanup filenames with url encode ch
     $ npm install -g clean-filename
 
 ## Usage
+
+    $ clean-filename -f <filename>
+
+there's more to come.
+
+## Development
 First clone repository and access the new folder
 
     $ git clone <repository> && cd $_
@@ -24,7 +30,7 @@ Run the test with
 
 ## ToDo
 
-- [ ] Add a command line name
+- [X] ~~Add a command line name~
 - [X] ~~Add test~~
 - [X] ~~Add new function to normalize filename for the web~~
 - [X] ~~Transform in Uppercase characters to decode~~
