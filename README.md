@@ -1,6 +1,9 @@
 # CleanFileName
 
 This is a node.js command line utility that cleanup filenames with url encode characters.
+## Installation
+
+    $ npm install -g clean-filename
 
 ## Usage
 First clone repository and access the new folder
