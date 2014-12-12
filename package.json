@@ -1,10 +1,10 @@
 {
   "name": "clean-filename",
-  "version": "0.0.1",
-  "description": "Cleanup downloaded files name",
+  "version": "0.0.2",
+  "description": "Cleanup filenames",
   "main": "index.js",
   "scripts": {
-    "test": "test.js"
+    "test": "./test/test.js"
   },
   "repository": {
     "type": "git",
