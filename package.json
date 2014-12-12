@@ -1,5 +1,5 @@
 {
-  "name": "cleanFilename",
+  "name": "clean-filename",
   "version": "0.0.1",
   "description": "Cleanup downloaded files name",
   "main": "index.js",
