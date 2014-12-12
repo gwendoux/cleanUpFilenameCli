@@ -16,7 +16,7 @@
     "url": "https://github.com/gwendoux/cleanUpFilename/issues"
   },
   "homepage": "https://github.com/gwendoux/cleanUpFilename",
-  "Dependencies": {
+  "dependencies": {
     "commander": "^2.5.0",
     "diacritics": "^1.2.1",
     "lower-case": "^1.0.2",
