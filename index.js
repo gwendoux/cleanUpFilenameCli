@@ -8,6 +8,7 @@ var program = require('commander'),
 program
   .version(pck.version)
   .option('-f, --filename [filename]', 'filename to clean up')
+  .option('-c, --clipboard', 'take clipboard value')
   .parse(process.argv);
 
 
