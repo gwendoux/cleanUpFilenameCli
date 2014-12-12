@@ -29,3 +29,4 @@ Run the test with
 - [ ] Improve help command
 - [X] ~~Use Encode/decode URI component~~
 - [ ] Add test to detect malformed URI
+- [ ] Remove path from copy/paste
