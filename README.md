@@ -39,4 +39,4 @@ Run the test with
 - [X] ~~Use Encode/decode URI component~~
 - [ ] Add test to detect malformed URI
 - [ ] Remove path from copy/paste
-- [ ] Add ask for input
+- [ ] Add ask for input (default mode)
