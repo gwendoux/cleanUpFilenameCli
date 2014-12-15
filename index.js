@@ -2,6 +2,7 @@
 'use strict';
 
 var program = require('commander'),
+    cp =  require('copy-paste').global(),
     pck = require('./package.json'),
     cleanup = require('./modules/cleanup.js').cleanup;
 
@@ -11,8 +12,14 @@ program
   .option('-c, --clipboard', 'take clipboard value')
   .parse(process.argv);
 
+if(program.filename) {
+    var input = program.filename;
+}
 
-var input = program.filename;
+if(program.clipboard) {
+    var input = cp.paste();
+}
+
 
 if(input === undefined) {
     program.help();
