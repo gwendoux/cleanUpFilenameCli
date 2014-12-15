@@ -26,5 +26,6 @@ if(input === undefined) {
 }
 
 var output = cleanup(input);
+copy(output);
 console.log("Result: %s", output);
 
