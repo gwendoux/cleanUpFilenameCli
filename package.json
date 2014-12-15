@@ -20,6 +20,7 @@
     "commander": "^2.5.0",
     "diacritics": "^1.2.1",
     "lower-case": "^1.0.2",
+    "prompt": "^0.2.14",
     "urlencode": "^0.2.0"
   },
   "devDependencies": {
@@ -27,7 +28,7 @@
     "gulp-mocha": "^2.0.0",
     "lower-case": "^1.0.2"
   },
-  "bin" : {
-    "clean-filename" : "./index.js"
+  "bin": {
+    "clean-filename": "./index.js"
   }
 }
