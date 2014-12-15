@@ -14,6 +14,10 @@ program
 
 var input = program.filename;
 
-var output = cleanup(input);
+if(input === undefined) {
+    program.help();
+}
 
+var output = cleanup(input);
 console.log("Result: %s", output);
+
