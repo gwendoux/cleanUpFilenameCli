@@ -9,30 +9,32 @@ var program = require('commander'),
 
 program
   .version(pck.version)
-  .option('-f, --filename [filename]', 'filename to clean up')
+  .option('-f, --filename <filename>', 'filename to clean up')
   .option('-c, --clipboard', 'take clipboard value')
+  .option('-a, --ask', 'ask for value')
   .parse(process.argv);
 
-if(input === undefined) {
-    program.help();
-}
 
 if(program.filename) {
     var input = program.filename;
+    outputResult(input);
 }
 
 if(program.clipboard) {
     var input = cp.paste();
+    outputResult(input);
 }
 
-else {
+if (program.ask) {
     prompt.start();
     prompt.get(['filename'], function (err, result) {
-
-    var input = result.filename;
-  });
+        var input = result.filename;
+        outputResult(input);
+    });
 }
 
-var output = cleanup(input);
-copy(output);
-console.log("Result: %s", output);
+function outputResult(input) {
+    var output = cleanup(input);
+    cp.copy(output);
+    console.log("Result: %s", output);
+}
