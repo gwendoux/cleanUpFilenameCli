@@ -44,9 +44,5 @@ Run the test with
 - [ ] Improve help command
 - [X] ~~Use Encode/decode URI component~~
 - [ ] Add test to detect malformed URI
-<<<<<<< HEAD
 - [X] ~~Remove path from copy/paste~
-=======
-- [ ] Remove path from copy/paste
 - [ ] Add ask for input (default mode)
->>>>>>> master
