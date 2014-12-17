@@ -35,14 +35,5 @@ Run the test with
     $ gulp test
 
 ## ToDo
-
-- [X] ~~Add a command line name~
-- [X] ~~Add test~~
-- [X] ~~Add new function to normalize filename for the web~~
-- [X] ~~Transform in Uppercase characters to decode~~
-- [ ] Add parameter to get clipboard content and add to after
-- [ ] Improve help command
-- [X] ~~Use Encode/decode URI component~~
 - [ ] Add test to detect malformed URI
-- [X] ~~Remove path from copy/paste~
-- [ ] Add ask for input (default mode)
+- [ ] Improve code
