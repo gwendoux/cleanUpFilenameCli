@@ -11,27 +11,26 @@ program
   .version(pck.version)
   .option('-f, --filename <filename>', 'filename to clean up')
   .option('-c, --clipboard', 'take clipboard value')
-  .option('-a, --ask', 'ask for value')
   .parse(process.argv);
 
 
 if(program.filename) {
     var input = program.filename;
     outputResult(input);
+    return;
 }
 
 if(program.clipboard) {
     var input = cp.paste();
     outputResult(input);
+    return;
 }
 
-if (program.ask) {
-    prompt.start();
-    prompt.get(['filename'], function (err, result) {
-        var input = result.filename;
-        outputResult(input);
-    });
-}
+prompt.start();
+prompt.get(['filename'], function (err, result) {
+    var input = result.filename;
+    outputResult(input);
+});
 
 function outputResult(input) {
     var output = cleanup(input);
