@@ -33,7 +33,3 @@ and just run with the name to clean in argument
 Run the test with
 
     $ gulp test
-
-## ToDo
-- [ ] Add test to detect malformed URI
-- [ ] Improve code
