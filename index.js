@@ -5,6 +5,7 @@ var program = require('commander'),
     cp =  require('copy-paste').global(),
     pck = require('./package.json'),
     cleanup = require('./modules/cleanup.js').cleanup,
+    output = require('./modules/output.js'),
     prompt = require('prompt');
 
 program
@@ -16,24 +17,18 @@ program
 
 if(program.filename) {
     var input = program.filename;
-    outputResult(input);
+    outputClipboard(input);
     return;
 }
 
 if(program.clipboard) {
     var input = cp.paste();
-    outputResult(input);
+    outputClipboard(input);
     return;
 }
 
 prompt.start();
 prompt.get(['filename'], function (err, result) {
     var input = result.filename;
-    outputResult(input);
+    outputClipboard(input);
 });
-
-function outputResult(input) {
-    var output = cleanup(input);
-    cp.copy(output);
-    console.log("Result: %s", output);
-}
