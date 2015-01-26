@@ -3,7 +3,9 @@ var urlencode = require('urlencode'),
     removeDiacritics = require('diacritics').remove,
     lowerCase = require('lower-case');
 
-module.exports.cleanup = function (val) {
+exports.cleanup = cleanup;
+
+function cleanup (val) {
     val = urlencode.decode(val, 'utf-8');
     val = removeDiacritics(val);
     val = val.replace(/\s{2,}/g, ' ')
