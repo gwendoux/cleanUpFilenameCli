@@ -2,10 +2,8 @@
 'use strict';
 
 var program = require('commander'),
-    cp =  require('copy-paste').global(),
-    pck = require('./package.json'),
-    cleanup = require('./modules/cleanup.js').cleanup,
-    output = require('./modules/output.js'),
+    pck = require('./package'),
+    output = require('./modules/output'),
     prompt = require('prompt');
 
 program
@@ -17,18 +15,18 @@ program
 
 if(program.filename) {
     var input = program.filename;
-    outputClipboard(input);
+    output.outputClipboard(input);
     return;
 }
 
 if(program.clipboard) {
     var input = cp.paste();
-    outputClipboard(input);
+    output.outputClipboard(input);
     return;
 }
 
 prompt.start();
 prompt.get(['filename'], function (err, result) {
     var input = result.filename;
-    outputClipboard(input);
+    output.outputClipboard(input);
 });

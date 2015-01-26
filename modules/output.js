@@ -1,3 +1,6 @@
+var cleanup =  require('./cleanup').cleanup,
+    cp = require('copy-paste').global();
+
 exports.outputClipboard = outputClipboard;
 
 function outputClipboard(input) {
