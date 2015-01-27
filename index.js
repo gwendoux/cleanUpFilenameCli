@@ -15,7 +15,7 @@ program
 
 if(program.filename) {
     var input = program.filename;
-    output.outputClipboard(input);
+    output.outputFileSystem(input);
     return;
 }
 
