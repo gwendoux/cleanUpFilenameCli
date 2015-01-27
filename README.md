@@ -7,15 +7,22 @@ This is a node.js command line utility that cleanup filenames with url encode ch
 
 ## Usage
 
+without option:
+
+    $ clean-filename
+    prompt: filename:
+
 use option `--clipboard` or `-c` to use clipboard content
 
     $ clean-filename -c
 
-use option `--filename` to enter input manually
+The output will be display in the console and also add to the clipboard
+
+use option `--filename` to rename with filesystem
 
     $ clean-filename -f <filename>
 
-The output will be display in the console and also add to the clipboard
+The output will be display in the console and also rename in the filesystem
 
 ## Development
 First clone repository and access the new folder
