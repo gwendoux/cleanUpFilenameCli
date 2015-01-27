@@ -2,9 +2,9 @@
 'use strict';
 
 var program = require('commander'),
-    pck = require('./package'),
-    output = require('./modules/output'),
-    prompt = require('prompt');
+    pck     = require('./package'),
+    output  = require('./modules/output'),
+    prompt  = require('prompt');
 
 program
   .version(pck.version)
@@ -15,7 +15,7 @@ program
 
 if(program.filename) {
     var input = program.filename;
-    output.outputClipboard(input);
+    output.outputFileSystem(input);
     return;
 }
 
