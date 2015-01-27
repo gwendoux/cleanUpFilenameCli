@@ -1,5 +1,6 @@
 var cleanup = require('./cleanup').cleanup,
     fs      = require('fs'),
+    path    = require('path'),
     cp      = require('copy-paste').global();
 
 exports.outputClipboard = outputClipboard;
@@ -12,8 +13,11 @@ function outputClipboard(input) {
 }
 
 function outputFileSystem(input) {
-    var output = cleanup(input);
-    fs.rename(input, output, function(err) {
+    var filePath = path.dirname(input); // get path file
+    var inputName = path.basename(input); // get filename
+    var output = cleanup(inputName);
+
+    fs.rename(input, filePath+'/'+output, function(err) {
         if(err) {
             throw err;
         } else {
