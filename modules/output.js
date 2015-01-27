@@ -1,6 +1,6 @@
-var cleanup =  require('./cleanup').cleanup,
-    fs = require('fs'),
-    cp = require('copy-paste').global();
+var cleanup = require('./cleanup').cleanup,
+    fs      = require('fs'),
+    cp      = require('copy-paste').global();
 
 exports.outputClipboard = outputClipboard;
 exports.outputFileSystem = outputFileSystem;
@@ -11,7 +11,7 @@ function outputClipboard(input) {
     console.log("Result: %s", output);
 }
 
-function outputFileSystem (input) {
+function outputFileSystem(input) {
     var output = cleanup(input);
     fs.rename(input, output, function(err) {
         if(err) {
