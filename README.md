@@ -27,7 +27,8 @@ The output will be display in the console and also rename in the filesystem
 ## Development
 First clone repository and access the new folder
 
-    $ git clone <repository> && cd $_
+    $ git clone <repository>
+    $ cd <folder>
 
 then install necessary modules
 
