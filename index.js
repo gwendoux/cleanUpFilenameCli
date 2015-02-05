@@ -4,6 +4,7 @@
 var program = require('commander'),
     pck     = require('./package'),
     output  = require('./modules/output'),
+    cp      = require('copy-paste').global(),
     prompt  = require('prompt');
 
 program

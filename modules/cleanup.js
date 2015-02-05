@@ -14,4 +14,4 @@ function cleanup (val) {
              .replace(/-+$|(-)+/g, '$1'); // remove multidashes
     val = lowerCase(val);
     return val;
-};
+}
