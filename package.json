@@ -28,6 +28,7 @@
     "gulp": "^3.8.10",
     "gulp-jshint": "^1.9.2",
     "gulp-mocha": "^2.0.0",
+    "gulp-task-listing": "^1.0.0",
     "jshint-stylish": "^1.0.0",
     "mocha": "^2.1.0",
     "must": "^0.12.0"
