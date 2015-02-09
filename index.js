@@ -13,7 +13,6 @@ program
   .option('-c, --clipboard', 'take clipboard value')
   .parse(process.argv);
 
-
 if(program.filename) {
     var input = program.filename;
     output.outputFileSystem(input);
@@ -22,6 +21,9 @@ if(program.filename) {
 
 if(program.clipboard) {
     var input = cp.paste();
+    if(!input) {
+        process.stdout.write("cannot process an empty input");
+    }
     output.outputClipboard(input);
     return;
 }
@@ -29,5 +31,8 @@ if(program.clipboard) {
 prompt.start();
 prompt.get(['filename'], function (err, result) {
     var input = result.filename;
+    if(!input) {
+        process.stdout.write("cannot process an empty input");
+    }
     output.outputClipboard(input);
 });
