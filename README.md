@@ -33,7 +33,10 @@ The output will be display in the console and also rename in the filesystem
 5. Add a new action "Run Shell Script"
 6. In the "pass input" selector choose "as arguments"
 7. In the textarea, just write the command line
-    $ clean-filename -f "$@"
+    $ for f in $@
+    $ do
+    $    clean-filename -f "$f"
+    $ done
 8. Now you can clean up your filename in the finder with right select -> services
 
 
