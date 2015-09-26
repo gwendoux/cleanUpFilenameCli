@@ -49,8 +49,8 @@ then install necessary modules
 
 and just run with the name to clean in argument
 
-    $ ./index.js <filename>
+    $ ./app.js <filename>
 
 Run the test with
 
-    $ gulp test
+    $ npm test
