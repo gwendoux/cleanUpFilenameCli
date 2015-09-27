@@ -1,10 +1,8 @@
-'use strict';
-
-var program = require('commander'),
-    pck     = require('./package'),
-    output  = require('./modules/output'),
-    cp      = require('copy-paste').global(),
-    prompt  = require('prompt');
+var program = require('commander');
+var pck     = require('./package');
+var output  = require('./modules/output');
+var cp      = require('copy-paste').global();
+var prompt  = require('prompt');
 
 program
   .version(pck.version)

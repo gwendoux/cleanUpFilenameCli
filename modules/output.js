@@ -1,7 +1,7 @@
-var cleanup = require('./cleanup').cleanup,
-    fs      = require('fs'),
-    path    = require('path'),
-    cp      = require('copy-paste').global();
+var cleanup = require('./cleanup').cleanup;
+var fs      = require('fs');
+var path    = require('path');
+var cp      = require('copy-paste').global();
 
 exports.outputClipboard = outputClipboard;
 exports.outputFileSystem = outputFileSystem;
