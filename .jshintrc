@@ -1,7 +1,10 @@
 {
-    "node": true,
-    "esnext": true,
-    "mocha": true,
-    "undef": true,
-    "unused": true
-}
+  "node": true,
+  "curly": true,
+  "eqeqeq": true,
+  "nocomma": true,
+  "esnext": true,
+  "mocha": true,
+  "undef": true,
+  "unused": true
+ }
