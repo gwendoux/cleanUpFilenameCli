@@ -4,7 +4,10 @@
   "description": "Cleanup filenames",
   "main": "app.js",
   "scripts": {
-
+    "presinstall": "npm prune",
+    "lint": "jshint --show-non-errors",
+    "test": "mocha ./test/test.js",
+    "posttest": "npm run lint"
   },
   "repository": {
     "type": "git",
