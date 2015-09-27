@@ -1,5 +1,5 @@
-var must = require('must'),
-    cleanup = require('../modules/cleanup.js').cleanup;
+var must = require('must');
+var cleanup = require('../modules/cleanup.js').cleanup;
 
 describe("CleanName", function() {
     it("must be a string", function(done) {
@@ -11,7 +11,7 @@ describe("CleanName", function() {
 
         result.must.be.a.string();
 
-        result.must.be(result);
+        result.must.be(TestResult);
 
         done();
     });
