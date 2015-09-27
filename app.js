@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 'use strict';
 
 var program = require('commander'),
@@ -16,7 +15,7 @@ program
 if(program.filename) {
     var input = program.filename;
     output.outputFileSystem(input);
-    return;
+    process.exit();
 }
 
 if(program.clipboard) {
@@ -25,7 +24,7 @@ if(program.clipboard) {
         process.stdout.write("cannot process an empty input");
     }
     output.outputClipboard(input);
-    return;
+    process.exit();
 }
 
 prompt.start();
