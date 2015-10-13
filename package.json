@@ -7,7 +7,10 @@
     "presinstall": "npm prune",
     "lint": "jshint --show-non-errors",
     "test": "mocha ./test/test.js",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint",
+    "preshrinkwrap": "rm -rf node_modules/ npm-shrinkwrap.json; npm install; npm dedupe",
+    "shrinkwrap": "npm shrinkwrap",
+    "prepublish": "npm shrinkwrap"
   },
   "repository": {
     "type": "git",
