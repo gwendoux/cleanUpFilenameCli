@@ -21,7 +21,7 @@ function outputFileSystem(input) {
         if(err) {
             throw err;
         } else {
-            console.log("Rewrite filename with %s", output);
+            console.log("Rewrite filename to %s", output);
         }
     });
 }
