@@ -1,5 +1,5 @@
-var expect = require('must'),
-    cleanup = require('../modules/cleanup.js').cleanup;
+var must = require('must');
+var cleanup = require('../modules/cleanup.js').cleanup;
 
 describe("CleanName", function() {
     it("must be a string", function(done) {
@@ -7,11 +7,11 @@ describe("CleanName", function() {
         var TestResult = "questionnaire-de-synthese-du-dossier-du-co-cac-a-publier";
         var result = cleanup(varTest);
 
-        expect(result).not.to.be.null();
+        must(result).not.to.be.null();
 
         result.must.be.a.string();
 
-        result.must.be(result);
+        result.must.be(TestResult);
 
         done();
     });

@@ -1,7 +1,7 @@
-var cleanup = require('./cleanup').cleanup,
-    fs      = require('fs'),
-    path    = require('path'),
-    cp      = require('copy-paste').global();
+var cleanup = require('./cleanup').cleanup;
+var fs      = require('fs');
+var path    = require('path');
+var cp      = require('copy-paste').global();
 
 exports.outputClipboard = outputClipboard;
 exports.outputFileSystem = outputFileSystem;
@@ -21,7 +21,7 @@ function outputFileSystem(input) {
         if(err) {
             throw err;
         } else {
-            console.log("Rewrite filename with %s", output);
+            console.log("Rewrite filename to %s", output);
         }
     });
 }

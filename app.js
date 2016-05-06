@@ -1,11 +1,10 @@
 #!/usr/bin/env node
-'use strict';
 
-var program = require('commander'),
-    pck     = require('./package'),
-    output  = require('./modules/output'),
-    cp      = require('copy-paste').global(),
-    prompt  = require('prompt');
+var program = require('commander');
+var pck     = require('./package');
+var output  = require('./modules/output');
+var cp      = require('copy-paste').global();
+var prompt  = require('prompt');
 
 program
   .version(pck.version)
@@ -16,7 +15,7 @@ program
 if(program.filename) {
     var input = program.filename;
     output.outputFileSystem(input);
-    return;
+    process.exit();
 }
 
 if(program.clipboard) {
@@ -25,7 +24,7 @@ if(program.clipboard) {
         process.stdout.write("cannot process an empty input");
     }
     output.outputClipboard(input);
-    return;
+    process.exit();
 }
 
 prompt.start();

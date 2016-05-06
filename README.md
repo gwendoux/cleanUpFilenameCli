@@ -3,7 +3,7 @@
 This is a node.js command line utility that cleanup filenames with url encode characters.
 ## Installation
 
-    $ npm install -g clean-filename
+    $ npm install -g clean-filename-cli
 
 ## Usage
 
@@ -52,8 +52,8 @@ then install necessary modules
 
 and just run with the name to clean in argument
 
-    $ ./index.js <filename>
+    $ ./app.js <filename>
 
 Run the test with
 
-    $ gulp test
+    $ npm test

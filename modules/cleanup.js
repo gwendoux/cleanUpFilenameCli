@@ -1,7 +1,6 @@
-
-var urlencode        = require('urlencode'),
-    removeDiacritics = require('diacritics').remove,
-    lowerCase        = require('lower-case');
+var urlencode        = require('urlencode');
+var removeDiacritics = require('diacritics').remove;
+var lowerCase        = require('lower-case');
 
 exports.cleanup = cleanup;
 

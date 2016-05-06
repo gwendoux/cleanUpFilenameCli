@@ -1,14 +1,20 @@
 {
-  "name": "clean-filename",
-  "version": "1.0.1",
+  "name": "clean-filename-cli",
+  "version": "1.1.3",
   "description": "Cleanup filenames",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "./test/test.js"
+    "presinstall": "npm prune",
+    "lint": "jshint --show-non-errors",
+    "test": "mocha ./test/test.js",
+    "posttest": "npm run lint",
+    "preshrinkwrap": "rm -rf node_modules/ npm-shrinkwrap.json; npm install; npm dedupe",
+    "shrinkwrap": "npm shrinkwrap",
+    "prepublish": "npm shrinkwrap"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:gwendoux/cleanUpFilename.git"
+    "url": "git@github.com:gwendoux/cleanUpFilenameCli.git"
   },
   "author": "gwendoux",
   "license": "ISC",
@@ -17,23 +23,26 @@
   },
   "homepage": "https://github.com/gwendoux/cleanUpFilename",
   "dependencies": {
-    "commander": "^2.6.0",
-    "diacritics": "^1.2.1",
-    "lower-case": "^1.1.1",
-    "urlencode": "^0.2.0",
-    "copy-paste": "^1.0.1",
-    "prompt": "^0.2.14"
+    "commander": "^2.8.1",
+    "copy-paste": "^1.1.3",
+    "diacritics": "^1.2.2",
+    "lower-case": "^1.1.2",
+    "prompt": "^0.2.14",
+    "urlencode": "^1.1.0"
   },
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-jshint": "^1.9.2",
-    "gulp-mocha": "^2.0.0",
-    "gulp-task-listing": "^1.0.0",
-    "jshint-stylish": "^1.0.0",
-    "mocha": "^2.1.0",
-    "must": "^0.12.0"
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.3",
+    "must": "^0.13.1"
   },
   "bin": {
-    "clean-filename": "./index.js"
-  }
+    "clean-filename": "./app.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "filename",
+    "cli"
+  ]
 }
