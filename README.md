@@ -1,6 +1,10 @@
 # CleanFileName
 
-This is a node.js command line utility that cleanup filenames with url encode characters.
+
+[![DOI](https://sandbox.zenodo.org/badge/27724541.svg)](https://sandbox.zenodo.org/badge/latestdoi/27724541)
+
+
+This is a node‧js command line utility that cleanup filenames with url encode characters.
 ## Installation
 
     $ npm install -g clean-filename-cli
@@ -49,7 +53,7 @@ then install necessary modules
 
 and just run with the name to clean in argument
 
-    $ ./app.js <filename>
+    $ ./app‧js <filename>
 
 Run the test with
 
